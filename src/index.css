@@ -5,9 +5,120 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(120deg, #000, #333);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app h1{
+  text-align: center;
+  color: #ddd;
+  font-family:'Arial Narrow Bold', sans-serif;
+  letter-spacing: 6px;
+}
+.wrapper{
+  display: flex;
+  height: 80vh;
+}
+
+.news-feed {
+background-color: #2b2b2b;
+color: #999;
+padding: 10px;
+margin: 5px;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+max-width: 300px;
+overflow-y:auto;
+scroll-behavior: smooth;
+}
+.news-feed .anchor{
+  background-color: #222;
+  padding: 2px 4px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+.news-feed a{
+  color: #999;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.currency-converter {
+background-color: #999;
+color: #333;
+padding: 10px;
+margin: 5px;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+text-align: center;
+}
+
+.exchange-rate {
+  background-color: #333;
+  color: #999;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.input-box{
+  background-color: #333;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+button{
+  border: none;
+  float: right;
+  margin: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 7px;
+  box-shadow:  0px 0px 2px #94949491, -0px -0px 2px rgba(153, 153, 153, 0.219);
+}
+
+input, select{
+  border: none;
+  padding: 7px;
+  box-shadow:  0px 0px 2px #949494, -0px -0px 2px #999;
+}
+input{
+  padding: 8px 4px;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+  height: 180vh;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .news-feed{
+    margin: auto;
+  }
+  .news-feed .anchor a{
+    font-size: 1rem;
+  }
 }
