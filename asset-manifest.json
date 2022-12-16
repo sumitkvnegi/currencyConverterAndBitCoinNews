@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/currencyConverterAndBitCoinNews/static/css/main.28c16b32.css",
+    "main.js": "/currencyConverterAndBitCoinNews/static/js/main.2a3c0790.js",
+    "index.html": "/currencyConverterAndBitCoinNews/index.html",
+    "main.28c16b32.css.map": "/currencyConverterAndBitCoinNews/static/css/main.28c16b32.css.map",
+    "main.2a3c0790.js.map": "/currencyConverterAndBitCoinNews/static/js/main.2a3c0790.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28c16b32.css",
+    "static/js/main.2a3c0790.js"
+  ]
+}
