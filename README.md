@@ -1,3 +1,5 @@
+[WARNING] app will not work as expected because server side code is not supported in github pages
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
